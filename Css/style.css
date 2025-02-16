@@ -98,6 +98,7 @@ ul{
 
 .showcase h2 , .showcase p{
     margin-bottom: 10px;
+    color: #262626;
 }
 
 .showcase .btn{
@@ -146,6 +147,7 @@ ul{
 
 .xbox p{
     margin: 10px 0 20px;
+    color: #262626;
 }
 
 /* CARBON */
@@ -249,4 +251,60 @@ ul{
 .footer li{
     margin-right: 30px;
     margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:700px){
+    .main-nav ul.main-menu{
+        /* display: none; */
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 50%;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        opacity: 0.85;
+        padding: 30px;
+
+    }
+
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 15px;
+    }
+
+    .home-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .xbox .content p{
+        display: none;
+    }
+
+    .xbox .content h2{
+        margin-bottom: 20px;
+    }
+
+    .carbon .content{
+        width: 85%;
+    }
+
+    .links .links-inner{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .links .links-inner{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
